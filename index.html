@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS FUNDAMENTAL-IRMAN BUDIMAN</title>
+
+
+    <!-- MY STYLE -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVBAR START -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo"><img src="img/Logo-revou.png" alt=""></a>
+        <div class="navbar-extra">
+            <a href="#" id="navbar-menu"><img src="img/tombol-garis.png" alt=""></a>
+        </div>
+        <div class="navbar-nav" id="navbarNav">
+            <a href="#">Home</a>
+            <a href="#our">Our Profile</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#contact">Message Us</a>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <main class="content">
+            <h1>Hi <span id="name"></span> Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama saya</p>
+            <p>Tekan tombol untuk mengganti nama anda :</p>
+            <button id="tombol">GANTI NAMA ANDA</button>
+        </main>
+    </section>
+
+    <!-- OUR PROFILE -->
+        <section id="our" class="our">
+            <h2><span>Our</span> Profile</h2>
+            <div class="row">
+                <div class="our-card">
+                    <img src="img/kota/jakarta.jpg" alt="Espresso" class="our-card-img">
+                    <h3 class="our-card-title">- Jakarta -</h3>
+                </div>
+
+                <div class="our-card">
+                    <img src="img/kota/bandung.jpg" alt="Espresso" class="our-card-img">
+                    <h3 class="our-card-title">- Bandung -</h3>
+                </div>
+
+                <div class="our-card">
+                    <img src="img/kota/bogor.jpeg" alt="Espresso" class="our-card-img">
+                    <h3 class="our-card-title">- Bogor -</h3>
+                </div>
+            </div>
+        </section>
+
+    <!-- PORTOFOLIO-->
+    <section class="portofolio" id="portofolio">
+        <div class="container">
+            <h2 class="sub-title">My <span>Portofolio</span></h2>
+            <div class="portofolio-list">
+                <div>
+                    <h2>PROJECT APLIKASI</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever
+                        since the 1500s, when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with
+                        the release of Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like Aldus PageMaker
+                        including versions of Lorem Ipsum.
+                      </p>
+                </div>
+
+                <div>
+                    <h2>PROJECT APLIKASI</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever
+                        since the 1500s, when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with
+                        the release of Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like Aldus PageMaker
+                        including versions of Lorem Ipsum.
+                      </p>
+                </div>
+
+                <div>
+                    <h2>PROJECT APLIKASI</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever
+                        since the 1500s, when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with
+                        the release of Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like Aldus PageMaker
+                        including versions of Lorem Ipsum.
+                      </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MESSAGE -->
+    <section id="contact" class="contact">
+        <h2><span>Message</span> Us</h2>
+        <div class="row">
+            <form id="messageForm">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama">
+                <label for="tanggalLahir">Tanggal Lahir:</label>
+                <input type="date" id="tanggalLahir" name="tanggalLahir">
+                <label for="jenisKelamin">Jenis Kelamin:</label>
+                <div>
+                    <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-Laki" checked>
+                    <label for="lakiLaki">Laki-Laki</label>
+                    <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea>
+                <button type="button" class="btn" onclick="displayMessage()">Submit</button>
+            </form>
+            <div class="result-container">
+                <p><strong>Current time: </strong><span id="currentTime"></span></p>
+                <p><strong>Nama:</strong> <span id="displayNama"></span></p>
+                <p><strong>Tanggal Lahir:</strong> <span id="displayTanggalLahir"></span></p>
+                <p><strong>Jenis Kelamin:</strong> <span id="displayJenisKelamin"></span></p>
+                <p><strong>Pesan:</strong> <span id="displayPesan"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Irman Budiman © 2024</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
